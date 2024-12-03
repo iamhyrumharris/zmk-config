@@ -30,6 +30,21 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <9 8>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <38 27>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <38 28>;
+        };
+
+        undo {
+            bindings = <&kp Z>;
+            key-positions = <38 25>;
+        };
     };
 
     behaviors {
