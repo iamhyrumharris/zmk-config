@@ -31,6 +31,20 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp RIGHT_PARENTHESIS>;
         };
+
+        lbracket: lbracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LBRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp LEFT_BRACKET>;
+        };
+
+        rbracket: rbracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RBRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp RIGHT_BRACKET>;
+        };
     };
 
     keymap {
@@ -45,10 +59,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &paraenthesis  &kp W  &kp E     &kp R  &kp T        &kp Y          &kp U  &kp I      &kp O    &Rparenthesis  &kp ESC
-&kp LCTRL  &kp A          &kp S  &kp D     &kp F  &kp G        &kp H          &kp J  &kp K      &kp L    &kp SEMI       &kp SQT
-&kp LSHFT  &kp Z          &kp X  &kp C     &kp V  &kp B        &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH       &mt RIGHT_SHIFT ENTER
-                                 &kp LGUI  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RALT
+&kp TAB    &paraenthesis  &lbracket  &kp E     &kp R    &kp T        &kp Y          &kp U  &kp I      &rbracket  &Rparenthesis  &kp ESC
+&kp LCTRL  &kp A          &kp S      &kp D     &lt 3 F  &kp G        &kp H          &kp J  &kp K      &kp L      &kp SEMI       &kp SQT
+&kp LSHFT  &kp Z          &kp X      &kp C     &kp V    &kp B        &kp N          &kp M  &kp COMMA  &kp DOT    &kp FSLH       &mt RIGHT_SHIFT ENTER
+                                     &kp LGUI  &mo 1    &kp SPACE    &kp BACKSPACE  &mo 2  &kp RALT
             >;
         };
 
