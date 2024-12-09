@@ -32,18 +32,23 @@
         };
 
         copy {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LG(C)>;
             key-positions = <38 27>;
         };
 
         paste {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp LG(V)>;
             key-positions = <38 28>;
         };
 
         undo {
-            bindings = <&kp Z>;
+            bindings = <&kp LG(Z)>;
             key-positions = <38 25>;
+        };
+
+        cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <38 26>;
         };
     };
 
