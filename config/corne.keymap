@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -51,14 +52,14 @@
             key-positions = <38 26>;
         };
 
-        CursorMovement {
-            bindings = <&kp LS(LG(CAPSLOCK))>;
-            key-positions = <28 25>;
+        xv {
+            bindings = <&mo 5>;
+            key-positions = <26 28>;
         };
 
-        xv {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <26 28>;
+        applications {
+            bindings = <&mo 4>;
+            key-positions = <37 40>;
         };
     };
 
@@ -165,6 +166,15 @@
 &trans  &trans  &kp LG(LA(LC(LS(S))))  &trans                 &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                 &kp LG(LC(LA(LS(C))))  &trans  &kp LG(LC(LA(LS(B))))    &trans  &trans  &trans  &trans  &trans  &trans
                                        &trans                 &trans  &trans                   &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mmv MOVE_DOWN  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
