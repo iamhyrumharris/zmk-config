@@ -1,0 +1,25 @@
+&display {
+    status = "okay";
+    screen-width = 128;  // Width of your Nice!View
+    screen-height = 32; // Height of your Nice!View
+
+    status-active = "y";
+
+    default-layer {
+        bindings = <
+            &status_battery
+            &status_current_layer // Keep your other display elements
+        >;
+    };
+
+    status-battery {
+        label = "Batt";      // Label before the percentage
+        format = " %p%%";    //  %p is replaced with the percentage
+        position = <0 20>; // (x, y) coordinate on the display
+    };
+     status-current_layer {  //Example of a layer status,
+        label = "Layer";
+        format = " %s";
+        position = <0 0>;
+    };
+};
