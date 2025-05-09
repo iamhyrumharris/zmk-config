@@ -162,10 +162,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans                 &trans                 &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LG(LA(LC(LS(S))))  &trans                 &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                 &kp LG(LC(LA(LS(C))))  &trans  &kp LG(LC(LA(LS(B))))    &trans  &trans  &trans  &trans  &trans  &trans
-                                       &trans                 &trans  &trans                   &trans  &trans  &trans
+&trans  &trans  &trans             &trans                 &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LA(LC(LS(S)))  &trans                 &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans             &kp LG(LC(LA(LS(C))))  &trans  &kp LG(LC(LA(LS(B))))    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans                 &trans  &trans                   &trans  &trans  &trans
             >;
         };
 
