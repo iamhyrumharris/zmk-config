@@ -163,7 +163,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &trans                 &trans                 &trans                 &kp LA(LG(LC(LS(T))))    &trans  &kp LC(LS(LG(LA(U))))  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(LG(LA(LC(S))))  &trans                 &trans                 &trans                   &trans  &trans                 &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(LG(LA(LC(S))))  &trans                 &kp LG(LC(LA(LS(F))))  &trans                   &trans  &trans                 &trans  &trans  &trans  &trans
 &trans  &trans  &trans                 &kp LG(LC(LA(LS(C))))  &kp LS(LA(LG(LC(V))))  &kp LG(LC(LA(LS(B))))    &trans  &kp LG(LC(LA(LS(M))))  &trans  &trans  &trans  &trans
                                        &trans                 &trans                 &trans                   &trans  &trans                 &trans
             >;
