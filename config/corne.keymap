@@ -15,21 +15,25 @@
         lparenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <1 3>;
+            require-prior-idle-ms = <150>;
         };
 
         rparenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <10 8>;
+            require-prior-idle-ms = <150>;
         };
 
         lbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <2 4>;
+            require-prior-idle-ms = <150>;
         };
 
         rbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <9 7>;
+            require-prior-idle-ms = <150>;
         };
 
         copy {
